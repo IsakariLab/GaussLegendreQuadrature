@@ -25,7 +25,7 @@ program main
     
     allocate(glq(ng))
     do ig=1,ng
-       glq%ng=ig
+       glq(ig)%ng=ig
        allocate(glq(ig)%gz(ig),glq(ig)%we(ig))
        call assemble_gauss(glq(ig)%ng,glq(ig)%gz,glq(ig)%we)
        write(*,*) "---"
