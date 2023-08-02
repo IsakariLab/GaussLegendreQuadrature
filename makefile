@@ -13,10 +13,10 @@ LIB_NAMES = slatec lapack blas
 OPENMP = 1
 
 # 最適化をon
-OPT = 1
+# OPT = 1
 
 # Fortran
-FC = ifort
+FC = gfortran
 FFLAGS +=
 
 # C
